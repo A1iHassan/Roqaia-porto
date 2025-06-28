@@ -1,3 +1,4 @@
+import Activities from "@/components/Activities";
 import Header from "@/components/Header";
 import Who from "@/components/Who";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Header />
       <Who />
+      <Activities />
     </>
   );
 }
