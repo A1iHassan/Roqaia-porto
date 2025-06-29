@@ -12,7 +12,7 @@ const Who = () => {
         button1="What we do"
         button2="Who we are"
       />
-      <img src="" alt="" />
+      <img src="women.png" alt="" className="w-[32rem] h-[30rem]" />
     </section>
   );
 };
