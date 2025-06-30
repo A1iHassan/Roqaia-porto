@@ -5,7 +5,7 @@ type CardProp = {
   title1: string;
   paragraph1: string | string[];
   paragraph2?: string | string[];
-  title2: string;
+  title2?: string;
   button1?: string;
   button2?: string;
 };
