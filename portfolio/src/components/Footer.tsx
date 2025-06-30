@@ -54,7 +54,7 @@ const Footer = () => {
             href={`https://mail.google.com/mail/?view=cm&fs=1&to=${emailFounder}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="block cursor-pointer border-0 border-blue-100 p-2 hover:bg-blue-100 hover:text-blue-900 transition-all duration-300"
+            className="block cursor-pointer border-2 border-blue-100 p-2 hover:bg-blue-100 hover:text-blue-900 transition-all duration-300"
           >
             Email the founder, Roqaia
           </a>
