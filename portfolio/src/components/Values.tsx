@@ -1,4 +1,3 @@
-import Card from "./Card";
 import { content } from "@/content/content";
 
 const Values = () => {
