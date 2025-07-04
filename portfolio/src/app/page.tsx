@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Who />
       <Activities />
-      <section className="ml-[1vw] w-[96vw] mb-[20rem] flex flex-row justify-around">
+      <section className="ml-[1vw] w-[96vw] mb-[20rem] flex flex-row justify-center gap-96">
         <SquareCard head="Mission" text={content.mission} />
         <SquareCard head="Vision" text={content.vision} />
       </section>
