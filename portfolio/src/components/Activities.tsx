@@ -2,20 +2,35 @@ import { content } from "@/content/content";
 
 const Activities = () => {
   return (
-    <section className="flex flex-col items-center relative mb-[20rem]">
+    <section className="flex flex-col items-center relative mb-56 sm:mb-[20rem]">
       <span className="text-5xl my-6">Our activities</span>
-      <div className=" bg-linear-to-br from-60% from-blue-950 to-blue-700 w-[96vw] p-6 bg-blue-950 rounded-2xl text-blue-200">
-        <div className="flex justify-around font-bold text-2xl text-blue-50">
-          <span>Research Support & Capacity Building</span>
-          <span>Maternal & Public Health Research</span>
-          <span>Community Solutions & Advocacy</span>
+      <div
+        className="flex flex-col gap-16
+      bg-linear-to-br from-60% from-blue-950 to-blue-700 w-[96vw] p-6 bg-blue-950 rounded-2xl text-blue-200"
+      >
+        <div className="">
+          <span className="block text-blue-100 text-2xl font-bold mb-4 ">
+            Research Support & Capacity Building
+          </span>
+          <p className="w-64 text-lg font-light tracking-wide ">
+            {content.ourCore[0]}
+          </p>
         </div>
-        <div className="flex justify-around text-wrap p-3 rounded-lg pt-7 text-lg font-light">
-          <p className="w-64 ">{content.ourCore[0]}</p>
-
-          <p className="w-64">{content.ourCore[1]}</p>
-
-          <p className="w-64">{content.ourCore[2]}</p>
+        <div className="">
+          <span className="block text-blue-100 text-2xl font-bold mb-4 ">
+            Maternal & Public Health Research
+          </span>
+          <p className="w-64 text-lg font-light tracking-wide">
+            {content.ourCore[1]}
+          </p>
+        </div>
+        <div className="">
+          <span className="block text-blue-100 text-2xl font-bold mb-4 ">
+            Community Solutions & Advocacy
+          </span>
+          <p className="w-64 text-lg font-light tracking-wide">
+            {content.ourCore[2]}
+          </p>
         </div>
         <img
           src="image862.png"

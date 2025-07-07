@@ -33,7 +33,9 @@ const Card = ({
   return (
     <section className="relative">
       <article
-        className={`backface-hidden w-[25vw] min-h-[30rem] text-xl bg-blue-200 m-3 p-6 pb-14 ${face === "back" && "rotate-y-180"} rounded-lg text-blue-950 transition-transform duration-1000 ease-in-out absolute top-0 left-0 `}
+        className={`${face === "back" && "rotate-y-180"}
+          backface-hidden bg-blue-200 text-blue-950 transition-transform duration-1000 ease-in-out absolute top-0 left-0 w-80 h-96 p-4 rounded-xl m-3
+          sm:w-[25vw] sm:min-h-[30rem] sm:text-xl sm:m-3 sm:p-6 sm:pb-14 sm:rounded-lg  `}
       >
         <p className="font-semibold text-2xl mb-4">{title1}</p>
         <p className="break-normal">{paragraph1}</p>
@@ -45,7 +47,9 @@ const Card = ({
         </button>
       </article>
       <article
-        className={`backface-hidden w-[25vw] min-h-[30rem] text-xl bg-blue-950 m-3 p-6 pb-14 ${face === "front" && "rotate-y-180"} rounded-lg text-blue-200 transition-transform duration-1000 ease-in-out absolute top-0 left-0 `}
+        className={`${face === "front" && "rotate-y-180"}
+          backface-hidden bg-blue-950 text-blue-200 transition-transform duration-1000 ease-in-out absolute top-0 left-0 w-80 h-96 p-4 rounded-xl m-3
+          sm:w-[25vw] sm:min-h-[30rem] sm:text-xl sm:m-3 sm:p-6 sm:pb-14 sm:rounded-lg  `}
       >
         <p className="font-semibold text-2xl mb-4">{title2}</p>
         <p className="break-normal">{paragraph2}</p>

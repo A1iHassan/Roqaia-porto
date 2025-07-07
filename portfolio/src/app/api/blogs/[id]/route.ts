@@ -11,7 +11,7 @@ export async function PUT(req: Request, { params }: ParamProp) {
     const { id } = params;
     const { title, body, cover } = await req.json()
 
-    const { data, error } = await supabase
+    const { error } = await supabase
         .from("blogs")
         .update({ title, body, cover })
         .eq("id", id)

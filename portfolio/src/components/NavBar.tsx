@@ -5,7 +5,7 @@ import ButtonC from "./Button";
 const NavBar = () => {
   const [clicked, setClicked] = useState<boolean>(false);
   return (
-    <>
+    <div className="absolute z-30">
       <div
         onClick={() => {
           setClicked((prev) => !prev);
@@ -19,8 +19,8 @@ const NavBar = () => {
       <nav
         className={`
           ${clicked ? "h-44" : "h-0"}
-          flex flex-col gap-1 w-20 
-          sm:flex sm:flex-row sm:gap-56 sm:w-screen sm:h-18 sm:py-4 sm:px-20 sm:m-4 sm:justify-center sm:rounded-lg sm:z-20 sm:fixed sm:inset-0
+          flex flex-col gap-1 w-20 bg-blue-100 rounded-lg ml-2
+          sm:flex sm:flex-row sm:gap-56 sm:w-svw sm:h-18 sm:py-4 sm:px-20 sm:m-4 sm:justify-center sm:rounded-lg sm:z-20 sm:fixed sm:inset-0
           transition-all duration-300
         `}
       >
@@ -29,7 +29,7 @@ const NavBar = () => {
         <ButtonC name="Meet The Founder" path="/founder" />
         <ButtonC name="Contact Us" path="/#footer" />
       </nav>
-    </>
+    </div>
   );
 };
 
