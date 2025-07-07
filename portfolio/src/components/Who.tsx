@@ -4,7 +4,7 @@ import { content } from "@/content/content";
 const Who = () => {
   return (
     <section
-      className="h-[50vh] flex my-56 m-auto tracking-wide
+      className="h-[50vh] flex my-56 mx-auto tracking-wide
     sm:w-100vw sm:h-[70vh] sm:mx-20 sm:flex sm:flex-row sm:gap-72 sm:justify-around"
     >
       <Card
