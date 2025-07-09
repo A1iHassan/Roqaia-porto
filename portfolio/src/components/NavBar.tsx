@@ -1,14 +1,31 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ButtonC from "./Button";
 
 const NavBar = () => {
   const [clicked, setClicked] = useState<boolean>(false);
   const [scroll, setScroll] = useState(false);
-  window.addEventListener("scroll", () => {
-    if (scrollY > 50) setScroll(true);
-    else setScroll(false);
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    // Only attach listener on client
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // Cleanup
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
   return (
     <div
       className={`fixed z-30 flex flex-col items-center w-full ${scroll ? "backdrop-blur-md bg-white/10" : "bg-transparent"}`}
