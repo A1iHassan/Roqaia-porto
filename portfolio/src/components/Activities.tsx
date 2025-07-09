@@ -15,7 +15,7 @@ const Activities = () => {
             Research Support & Capacity Building
           </span>
           <p className="w-64 text-lg font-light tracking-wide ">
-            {content.ourCore[0]}
+            {content.ourCore[0][0]}
           </p>
         </div>
         <div className="">
