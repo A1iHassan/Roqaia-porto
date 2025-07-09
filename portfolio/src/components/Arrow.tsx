@@ -1,0 +1,127 @@
+type ArrowProp = {
+  styling?: string;
+  fill?: string;
+};
+
+const Arrow = ({ styling, fill = "#000000" }: ArrowProp) => {
+  return (
+    <svg
+      version="1.1"
+      id="svg1183"
+      width="612.87732"
+      height="177.99702"
+      className={styling}
+    >
+      <defs id="defs1187" />
+
+      <g
+        id="g1189"
+        transform="matrix(3.7795276,0,0,3.7795276,-70.860053,-445.76161)"
+        fill={fill}
+      >
+        <rect
+          id="rect846"
+          width="9.0891294"
+          height="2.1313491"
+          x="-4.1835399"
+          y="162.6682"
+          transform="rotate(-8.1424461)"
+        />
+        <rect
+          id="rect928"
+          width="9.0891294"
+          height="2.1313491"
+          x="-68.292244"
+          y="145.7074"
+          transform="rotate(-37.443485)"
+        />
+        <rect
+          id="rect928-3"
+          width="9.0891294"
+          height="2.1313491"
+          x="-89.243507"
+          y="123.17289"
+          transform="rotate(-54.115269)"
+        />
+        <rect
+          id="rect928-6"
+          width="9.0891294"
+          height="2.1313491"
+          x="-30.621494"
+          y="138.06471"
+          transform="rotate(-37.443485)"
+        />
+        <rect
+          id="rect928-7"
+          width="9.0891294"
+          height="2.1313491"
+          x="50.865353"
+          y="132.61237"
+          transform="rotate(-11.432791)"
+        />
+        <rect
+          id="rect928-5"
+          width="9.0891294"
+          height="2.1313491"
+          x="119.94379"
+          y="92.724228"
+          transform="rotate(13.761523)"
+        />
+        <rect
+          id="rect928-35"
+          width="9.0891294"
+          height="2.1313491"
+          x="-174.60622"
+          y="-3.1043754"
+          transform="rotate(-131.36971)"
+        />
+        <rect
+          id="rect928-62"
+          width="9.0891294"
+          height="2.1313491"
+          x="-166.15445"
+          y="86.921883"
+          transform="rotate(-101.01949)"
+        />
+        <rect
+          id="rect928-9"
+          width="9.0891294"
+          height="2.1313491"
+          x="192.56378"
+          y="-20.319036"
+          transform="rotate(57.18541)"
+        />
+        <rect
+          id="rect928-1"
+          width="9.0891294"
+          height="2.1313491"
+          x="156.26947"
+          y="136.52472"
+          transform="rotate(9.8431056)"
+        />
+        <rect
+          id="rect928-2"
+          width="9.0891294"
+          height="2.1313491"
+          x="74.92675"
+          y="204.30475"
+          transform="rotate(-22.113063)"
+        />
+        <rect
+          id="rect928-70"
+          width="9.0891294"
+          height="2.1313491"
+          x="156.33304"
+          y="161.91348"
+          transform="rotate(-1.9283647)"
+        />
+        <path
+          id="rect1096"
+          d="m 173.96623,153.86616 -0.14323,0.0649 0.16062,5.89496 0.14718,0.0667 6.56588,-2.97599 z"
+        />
+      </g>
+    </svg>
+  );
+};
+
+export default Arrow;

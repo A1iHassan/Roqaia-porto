@@ -5,15 +5,16 @@ const Who = () => {
   return (
     <section
       className="h-[50vh] flex my-56 mx-auto tracking-wide
-    sm:w-100vw sm:h-[70vh] sm:mx-20 sm:flex sm:flex-row sm:gap-72 sm:justify-around"
+    sm:w-100vw sm:h-[70vh] sm:mx-20 sm:flex sm:flex-row sm:gap-72 sm:justify-around sm:mb-40"
     >
       <Card
         title1="Who we are?"
-        paragraph1={content.who}
+        paragraph1={content.who[0]}
         title2="What we do?"
         paragraph2={content.what}
         button1="What we do"
         button2="Who we are"
+        comment={content.who[1]}
       />
       <img
         src="women.png"

@@ -1,4 +1,5 @@
 import Activities from "@/components/Activities";
+import Arrow from "@/components/Arrow";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import SquareCard from "@/components/Square";
@@ -14,10 +15,12 @@ export default function Home() {
       <Who />
       <Activities />
       <section
-        className="flex flex-col items-center gap-4 mb-44
-      sm:ml-[1vw] sm:w-[96vw] sm:mb-[20rem] sm:flex-row sm:justify-center sm:gap-96"
+        className="flex flex-col items-center gap-5 mb-50
+      md:flex-row md:justify-center
+      "
       >
         <SquareCard head="Mission" text={content.mission} />
+        <Arrow styling="hidden md:block" fill="#bedbff" />
         <SquareCard head="Vision" text={content.vision} />
       </section>
       <Values />
