@@ -20,7 +20,7 @@ export default function Home() {
       "
       >
         <SquareCard head="Mission" text={content.mission} />
-        <Arrow styling="hidden md:block" fill="#bedbff" />
+        <Arrow styling="hidden md:block" fill="#0779ff" />
         <SquareCard head="Vision" text={content.vision} />
       </section>
       <Values />

@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${oswald.className}`}>
+      <body
+        className={`${oswald.className} bg-gradient-to-b from-blue-50 via-blue-100 to-blue-50`}
+      >
         {" "}
         <NavBar />
         {children}

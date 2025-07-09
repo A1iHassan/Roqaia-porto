@@ -16,11 +16,14 @@ const Who = () => {
         button2="Who we are"
         comment={content.who[1]}
       />
-      <img
-        src="women.png"
-        alt=""
-        className="sm:w-[32rem] sm:h-[30rem] sm:block hidden"
-      />
+      <div className="flex justify-center items-center relative">
+        <div className="sm:w-[22rem] sm:h-[22rem] sm:rounded-full sm:border-[1.5rem] sm:absolute sm:border-blue-50 sm:z-0 sm:-translate-y-18 sm:block hidden"></div>
+        <img
+          src="women.png"
+          alt=""
+          className="sm:w-[32rem] sm:h-[30rem] sm:block hidden z-10 -translate-y-25"
+        />
+      </div>
     </section>
   );
 };
