@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Meet = () => {
   return (
-    <>
+    <div className="w-screen">
       <header
-        className="flex justify-center items-center pt-16
+        className="flex justify-center items-center pt-16 scale-90
       sm:gap-24 sm:h-svh sm:w-full"
       >
         <span className="absolute left-0 ml-2 w-45 z-20">
@@ -43,8 +43,38 @@ const Meet = () => {
           />
         </div>
       </header>
-      <main className="w-full">{content.founder}</main>
-    </>
+      <main className="m-4 flex flex-col gap-8 mb-40">
+        {content.founder.map((element, index) => (
+          <p
+            key={index}
+            className={`
+              sm:text-2xl sm:w-1/2 h-auto
+              ${index % 2 === 0 ? "bg-blue-950 text-blue-100" : "bg-blue-200 text-blue-900"}
+              ${index === 6 ? "text-2xl font-bold tracking-wider" : "text-lg tracking-wide"}
+              ${
+                index === 0
+                  ? "sm:ml-[6rem]"
+                  : index === 1
+                    ? "sm:ml-[14rem]"
+                    : index === 2
+                      ? "sm:ml-[22rem]"
+                      : index === 3
+                        ? "sm:ml-[30rem]"
+                        : index === 4
+                          ? "sm:ml-[38rem]"
+                          : index === 5
+                            ? "sm:ml-[46rem]"
+                            : index === 6
+                              ? "sm:ml-[54rem]"
+                              : ""
+              }
+              p-5 rounded-lg w-40`}
+          >
+            {element}
+          </p>
+        ))}
+      </main>
+    </div>
   );
 };
 
