@@ -1,3 +1,5 @@
+"use client";
+
 import supabase from "@/lib/supabaseAdmin";
 import { useParams } from "next/navigation";
 
