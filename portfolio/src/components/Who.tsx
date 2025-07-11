@@ -2,7 +2,7 @@ import { content } from "@/content/content";
 
 const Who = () => {
   return (
-    <section className="relative mt-50 sm:my-50 flex sm:flex-row flex-col sm:justify-center gap-10 z-30">
+    <section className="relative mt-50 sm:my-50 flex sm:flex-row flex-col sm:justify-center gap-10">
       <article
         className={`
            bg-blue-200 text-blue-950 w-80 h-[26rem] p-4 rounded-xl m-3
