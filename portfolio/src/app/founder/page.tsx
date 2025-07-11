@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Meet = () => {
   return (
-    <div className="w-screen">
+    <div className="w-screen bg-gradient-to-b from-white via-blue-100 to-white">
       <header
         className="flex justify-center items-center pt-16
       sm:gap-24 sm:h-svh sm:w-full"
