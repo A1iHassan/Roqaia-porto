@@ -1,29 +1,28 @@
-import Card from "./Card";
 import { content } from "@/content/content";
 
 const Who = () => {
   return (
-    <section
-      className="h-[50vh] flex my-56 mx-auto tracking-wide
-    sm:w-100vw sm:h-[70vh] sm:mx-20 sm:flex sm:flex-row sm:gap-72 sm:justify-around sm:mb-40"
-    >
-      <Card
-        title1="Who we are?"
-        paragraph1={content.who[0]}
-        title2="What we do?"
-        paragraph2={content.what}
-        button1="What we do"
-        button2="Who we are"
-        comment={content.who[1]}
-      />
-      <div className="flex justify-center items-center relative">
-        <div className="sm:w-[22rem] sm:h-[22rem] sm:rounded-full sm:border-[1.5rem] sm:absolute sm:border-blue-50 sm:z-0 sm:-translate-y-18 sm:block hidden"></div>
-        <img
-          src="women.png"
-          alt=""
-          className="sm:w-[32rem] sm:h-[30rem] sm:block hidden z-10 -translate-y-25"
-        />
-      </div>
+    <section className="relative mt-50 sm:my-50 flex sm:flex-row flex-col sm:justify-center gap-10 z-30">
+      <article
+        className={`
+           bg-blue-200 text-blue-950 w-80 h-[26rem] p-4 rounded-xl m-3
+          
+          sm:w-[25vw] sm:min-h-[30rem] sm:text-xl sm:m-3 sm:p-6 sm:pb-14 sm:rounded-lg  `}
+      >
+        <p className="font-semibold text-2xl mb-4">Who we are</p>
+        <p className="break-normal">{content.who[0]}</p>
+        <p className="p-2 bg-blue-900 border-l-5 rounded-md border-black text-blue-50 opacity-50 mt-3">
+          {content.who[1]}
+        </p>
+      </article>
+      <article
+        className={`
+           bg-blue-950 text-blue-200 w-80 h-[26rem] p-4 rounded-xl m-3
+          sm:w-[25vw] sm:min-h-[30rem] sm:text-xl sm:m-3 sm:p-6 sm:pb-14 sm:rounded-lg  `}
+      >
+        <p className="font-semibold text-2xl mb-4">What we do</p>
+        <p className="break-normal">{content.what}</p>
+      </article>
     </section>
   );
 };

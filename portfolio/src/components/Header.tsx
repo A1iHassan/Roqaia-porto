@@ -14,7 +14,7 @@ const Header = () => {
         className="z-0 object-cover overflow-hidden"
       />
       <div className="w-full h-full z-10 bg-gradient-to-b from-blue-300 to-transparent absolute"></div>
-      <section className="flex flex-row items-center gap-3 text-blue-900 sm:mt-80 sm:mb-20 z-20 pt-18 mt-20">
+      <section className="flex flex-row items-center gap-3 text-blue-900 sm:mt-40 sm:mb-20 z-20 pt-18 mt-20">
         <img
           src="bitmap.png"
           alt="logo"
