@@ -9,7 +9,7 @@ const Meet = () => {
           Rogya Abdelrasol
         </h1>
         <h2 className="sm:text-4xl text-blue-950 text-start">
-          Mdical Doctor & Public Health Professional
+          Medical Doctor & Public Health Professional
         </h2>
       </span>
       <Image
