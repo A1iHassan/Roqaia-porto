@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Blogs = async () => {
-  const { data, error } = await supabase.from("blogs").select("*");
+  const { data, error } = await supabase.from("Blogs").select("*");
 
   if (error) return <>An Error Happened</>;
 

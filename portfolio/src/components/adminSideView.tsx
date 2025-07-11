@@ -2,7 +2,7 @@ import supabase from "@/lib/supabaseAdmin";
 import Link from "next/link";
 
 const SideView = async () => {
-  const { data, error } = await supabase.from("blogs").select("id, title");
+  const { data, error } = await supabase.from("Blogs").select("id, title");
   if (error) return <div>Error loading the titles</div>;
   return (
     <label

@@ -51,7 +51,7 @@ const CreateBlog = () => {
 
   const handleSubmit = async () => {
     if (title && body && cover) {
-      await supabase.from("blogs").insert([{ title, body, cover }]);
+      await supabase.from("Blogs").insert([{ title, body, cover }]);
       location.reload();
     } else console.log("not valid");
   };
