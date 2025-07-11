@@ -18,7 +18,7 @@ const SingleBlog = async ({ params }: { params: { id: string } }) => {
         alt="Cover Photo"
         className="w-3/4"
       />
-      <p className="text-2xl tracking-wide">
+      <p className="sm:text-2xl text-lg tracking-wide p-3">
         {data ? data[0].body : "Paragraph Body not found"}
       </p>
     </main>
