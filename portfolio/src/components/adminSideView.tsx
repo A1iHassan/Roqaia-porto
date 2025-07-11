@@ -1,4 +1,5 @@
 import supabase from "@/lib/supabaseAdmin";
+import Link from "next/link";
 
 const SideView = async () => {
   const { data, error } = await supabase.from("blogs").select("id, title");
@@ -20,7 +21,9 @@ const SideView = async () => {
       "
       >
         {data.map((blog) => (
-          <li key={blog.id}>{blog.title}</li>
+          <li key={blog.id}>
+            <Link href={`/blogs/${blog.id}`}>{blog.title}</Link>
+          </li>
         ))}
       </ul>
     </label>
