@@ -20,11 +20,11 @@ export default function Home() {
       >
         <SquareCard head="Mission" text={content.mission} />
         <div className="flex justify-center items-center relative">
-          <div className="sm:w-[22rem] sm:h-[22rem] sm:rounded-full sm:border-[1.5rem] sm:absolute sm:border-blue-50 sm:z-0 sm:-translate-y-18 sm:block hidden"></div>
+          <div className="sm:w-[22rem] sm:h-[22rem] sm:rounded-full sm:border-[1.5rem] sm:absolute sm:border-blue-50 sm:z-0 sm:translate-y-13 sm:block hidden"></div>
           <img
             src="women.png"
             alt=""
-            className="sm:w-[32rem] sm:h-[30rem] sm:block hidden z-10 -translate-y-25"
+            className="sm:w-[32rem] sm:h-[30rem] sm:block hidden z-10 "
           />
         </div>
         <SquareCard head="Vision" text={content.vision} />
