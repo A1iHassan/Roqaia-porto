@@ -1,7 +1,7 @@
 import supabase from "@/lib/supabaseAdmin";
 
 const SingleBlog = async ({ params }: { params: { id: string } }) => {
-  const { data, error } = await supabase
+  const { data } = await supabase
     .from("blogs")
     .select("id, title, body, cover")
     .eq("id", params.id);
