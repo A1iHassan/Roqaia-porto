@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header
       className="flex flex-col sm:relative items-center justify-center gap-10 w-svw h-56
-        sm:mb-64 sm:h-[100vh]"
+       sm:h-[100vh]"
     >
       <Image
         src="/header.png"

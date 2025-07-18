@@ -4,7 +4,7 @@ import Image from "next/image";
 const Who = () => {
   return (
     <div className="flex flex-col items-center ">
-      <section className="relative mt-50 sm:my-50 flex sm:flex-row flex-col sm:justify-center gap-10">
+      <section className="relative mt-20 sm:my-20 flex sm:flex-row flex-col sm:justify-center gap-10">
         <article
           className={`
            bg-blue-200 text-blue-950 w-80 h-[26rem] p-4 rounded-xl m-3

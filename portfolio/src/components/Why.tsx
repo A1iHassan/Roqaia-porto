@@ -9,7 +9,7 @@ const Why = () => {
         text-blue-900                   
         p-5 rounded-xl
         flex flex-col gap-10 items-center
-        mb-80 mt-44 md:max-w-1/2 mx-auto
+        mb-80 mt-44 md:max-w-2/3 mx-auto
       "
     >
       <span className="text-5xl text-blue-100">Why we exist?</span>
@@ -19,7 +19,7 @@ const Why = () => {
             key={index}
             className="
               md:text-2xl text-xl font-light tracking-wider
-              bg-white/60       
+              bg-white/40      
               backdrop-blur-sm   
               p-4 rounded-md   
             "

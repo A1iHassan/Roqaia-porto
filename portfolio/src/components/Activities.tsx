@@ -2,7 +2,7 @@ import { content } from "@/content/content";
 
 const Activities = () => {
   return (
-    <section className="flex flex-col items-center relative mb-56 sm:mb-[20rem]">
+    <section className="flex flex-col items-center relative mb-40 sm:mb-20">
       <span className="text-6xl my-6 text-blue-900 tracking-wide font-medium">
         Our activities
       </span>
