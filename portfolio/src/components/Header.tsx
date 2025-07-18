@@ -8,7 +8,7 @@ const Header = () => {
         sm:mb-64 sm:h-[100vh]"
     >
       <Image
-        src="/mom.jpg"
+        src="/header.png"
         alt="mom"
         fill
         className="z-0 object-cover overflow-hidden"
