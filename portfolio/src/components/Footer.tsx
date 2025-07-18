@@ -2,8 +2,8 @@ import { LinkedIn, Instagram } from "./Icons";
 
 const Footer = () => {
   const phoneNumber = "+256 702 179856";
-  const emailUs = "info@phrimpacthub.org";
-  const emailFounder = "rogya@phrimpacthub.org";
+  const emailUs = "phrimpacthub@gmail.com";
+  const emailFounder = "rogyamo@gmail.com";
   return (
     <footer
       className="sm:h-[40rem] h-screen bg-blue-950 text-blue-100 font-light text-lg  p-8 tracking-wide flex flex-col gap-10 items-center"
@@ -29,7 +29,10 @@ const Footer = () => {
         </div>
         <div className="">
           <span className="ml-2 sm:ml-0 w-44 flex flex-row relative gap-3 mb-5 cursor-pointer after:content-[''] after:block after:w-0 after:h-[1px] after:bg-blue-100 after:absolute after:-bottom-1 hover:after:w-full after:transition-all after:duration-300 after:delay-100">
-            <a className="w-6 h-6">
+            <a
+              href="https://www.linkedin.com/in/public-health-research-and-impact-hub-a98938375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              className="w-6 h-6"
+            >
               {/* add links to the rerspective platform when provided by Roqaia */}
               <LinkedIn />
             </a>
@@ -37,7 +40,10 @@ const Footer = () => {
           </span>
           <span className="flex flex-row relative gap-3 cursor-pointer after:content-[''] after:block after:w-0 after:h-[1px] after:bg-blue-100 after:absolute after:-bottom-1 hover:after:w-full after:transition-all after:duration-300 after:delay-100">
             {/* add links to the rerspective platform when provided by Roqaia */}
-            <a className="sm:w-6 sm:h-6 w-10 h-10">
+            <a
+              href="https://www.instagram.com/phrih.africa?igsh=MTB6Y3Q2NTd4cXAyNw=="
+              className="sm:w-6 sm:h-6 w-10 h-10"
+            >
               <Instagram />
             </a>
             Stay in tune with our new acivities Instagram
