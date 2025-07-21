@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="">
           <span className="ml-2 sm:ml-0 w-44 flex flex-row relative gap-3 mb-5 cursor-pointer after:content-[''] after:block after:w-0 after:h-[1px] after:bg-blue-100 after:absolute after:-bottom-1 hover:after:w-full after:transition-all after:duration-300 after:delay-100">
             <a
-              href="https://www.linkedin.com/in/public-health-research-and-impact-hub-a98938375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              href="https://www.linkedin.com/company/public-health-research-impact-hub-phrih/"
               className="w-6 h-6"
             >
               {/* add links to the rerspective platform when provided by Roqaia */}
