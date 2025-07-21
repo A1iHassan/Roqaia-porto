@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import supabase from "@/lib/supabaseAdmin";
 import Link from "next/link";
 import Image from "next/image";
