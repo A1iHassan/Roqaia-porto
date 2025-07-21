@@ -9,9 +9,9 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Rogya",
+  title: "Phrimpacthub",
   description:
-    "I'm Dr. Rogya Abdelrasol, a medical doctor and public health professional currently based in Kampala, Uganda",
+    "Public Health Research & Impact Hub is a female-led initiative designed to bridge the gap between academic knowledge and practical health solutions across Africa",
 };
 
 export default function RootLayout({
