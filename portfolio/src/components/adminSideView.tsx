@@ -22,7 +22,12 @@ const SideView = async () => {
       >
         {data.map((blog) => (
           <li key={blog.id}>
-            <Link href={`/blogs/${blog.id}`}>{blog.title}</Link>
+            <Link
+              href={`/blogs/${blog.id}`}
+              className="sm:text-lg sm:my-4 block"
+            >
+              {blog.title}
+            </Link>
           </li>
         ))}
       </ul>
